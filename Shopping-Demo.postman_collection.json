@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "eed0c2c1-c211-40a6-93f4-a814294dc2d9",
+		"name": "Shopping-Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create-order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cGRhdGVkX2F0IjoiMjAyMi0wNS0yM1QwMzoxOTozNC4xNzBaIiwiYWRkcmVzcyI6eyJjb3VudHJ5IjpudWxsLCJwb3N0YWxfY29kZSI6bnVsbCwicmVnaW9uIjpudWxsLCJmb3JtYXR0ZWQiOm51bGx9LCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJwaG9uZV9udW1iZXIiOm51bGwsImxvY2FsZSI6bnVsbCwiem9uZWluZm8iOm51bGwsImJpcnRoZGF0ZSI6IjIwMDEtMDEtMzFUMTY6MDA6MDAuMDAwWiIsImdlbmRlciI6IiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJlbWFpbCI6Im1hb2xvbmdkb25nQGdtYWlsLmNvbSIsIndlYnNpdGUiOm51bGwsInBpY3R1cmUiOiJodHRwczovL2ZpbGVzLmF1dGhpbmcuY28vdXNlci1jb250ZW50cy9waG90b3MvNWY2ZjFhNmEtMTRiNy00ODVlLThiMzEtMjAxODZkMTJiNTk5IiwicHJvZmlsZSI6bnVsbCwicHJlZmVycmVkX3VzZXJuYW1lIjpudWxsLCJuaWNrbmFtZSI6IumhuumjjuS4jea1qiIsIm1pZGRsZV9uYW1lIjpudWxsLCJmYW1pbHlfbmFtZSI6bnVsbCwiZ2l2ZW5fbmFtZSI6bnVsbCwibmFtZSI6IumAhumjjuS4jeaKlSIsInN1YiI6IjYyMDMzNWYyMjNkOWMwNDVmYjUxMWIxOCIsImV4dGVybmFsX2lkIjpudWxsLCJ1bmlvbmlkIjpudWxsLCJ1c2VybmFtZSI6InRlc3QiLCJkYXRhIjp7InR5cGUiOiJ1c2VyIiwidXNlclBvb2xJZCI6IjYwY2FhZjQxZGE4OWYxOTU0ODc1Y2VlMSIsImFwcElkIjoiNjBjYWFmNDFkZjY3MGI3NzFmZDA4OTM3IiwiaWQiOiI2MjAzMzVmMjIzZDljMDQ1ZmI1MTFiMTgiLCJ1c2VySWQiOiI2MjAzMzVmMjIzZDljMDQ1ZmI1MTFiMTgiLCJfaWQiOiI2MjAzMzVmMjIzZDljMDQ1ZmI1MTFiMTgiLCJwaG9uZSI6bnVsbCwiZW1haWwiOiJtYW9sb25nZG9uZ0BnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRlc3QiLCJ1bmlvbmlkIjpudWxsLCJvcGVuaWQiOm51bGwsImNsaWVudElkIjoiNjBjYWFmNDFkYTg5ZjE5NTQ4NzVjZWUxIn0sInVzZXJwb29sX2lkIjoiNjBjYWFmNDFkYTg5ZjE5NTQ4NzVjZWUxIiwiYXVkIjoiNjBjYWFmNDFkZjY3MGI3NzFmZDA4OTM3IiwiZXhwIjoxNjU0NDg1NzI0LCJpYXQiOjE2NTMyNzYxMjQsImlzcyI6Imh0dHBzOi8vbHJiMzFzLWRlbW8uYXV0aGluZy5jbi9vaWRjIn0.DbIy4M2DaxLt7pJ3waaBGV5D-BKA8xNVYPURYHL8xzU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-authing-app-id",
+						"value": "60caaf41df670b771fd08937",
+						"type": "text"
+					},
+					{
+						"key": "x-authing-userpool-id",
+						"value": "60caaf41da89f1954875cee1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"iPhone\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/order/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list-order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cGRhdGVkX2F0IjoiMjAyMi0wNS0yM1QwMzoxOTozNC4xNzBaIiwiYWRkcmVzcyI6eyJjb3VudHJ5IjpudWxsLCJwb3N0YWxfY29kZSI6bnVsbCwicmVnaW9uIjpudWxsLCJmb3JtYXR0ZWQiOm51bGx9LCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJwaG9uZV9udW1iZXIiOm51bGwsImxvY2FsZSI6bnVsbCwiem9uZWluZm8iOm51bGwsImJpcnRoZGF0ZSI6IjIwMDEtMDEtMzFUMTY6MDA6MDAuMDAwWiIsImdlbmRlciI6IiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJlbWFpbCI6Im1hb2xvbmdkb25nQGdtYWlsLmNvbSIsIndlYnNpdGUiOm51bGwsInBpY3R1cmUiOiJodHRwczovL2ZpbGVzLmF1dGhpbmcuY28vdXNlci1jb250ZW50cy9waG90b3MvNWY2ZjFhNmEtMTRiNy00ODVlLThiMzEtMjAxODZkMTJiNTk5IiwicHJvZmlsZSI6bnVsbCwicHJlZmVycmVkX3VzZXJuYW1lIjpudWxsLCJuaWNrbmFtZSI6IumhuumjjuS4jea1qiIsIm1pZGRsZV9uYW1lIjpudWxsLCJmYW1pbHlfbmFtZSI6bnVsbCwiZ2l2ZW5fbmFtZSI6bnVsbCwibmFtZSI6IumAhumjjuS4jeaKlSIsInN1YiI6IjYyMDMzNWYyMjNkOWMwNDVmYjUxMWIxOCIsImV4dGVybmFsX2lkIjpudWxsLCJ1bmlvbmlkIjpudWxsLCJ1c2VybmFtZSI6InRlc3QiLCJkYXRhIjp7InR5cGUiOiJ1c2VyIiwidXNlclBvb2xJZCI6IjYwY2FhZjQxZGE4OWYxOTU0ODc1Y2VlMSIsImFwcElkIjoiNjBjYWFmNDFkZjY3MGI3NzFmZDA4OTM3IiwiaWQiOiI2MjAzMzVmMjIzZDljMDQ1ZmI1MTFiMTgiLCJ1c2VySWQiOiI2MjAzMzVmMjIzZDljMDQ1ZmI1MTFiMTgiLCJfaWQiOiI2MjAzMzVmMjIzZDljMDQ1ZmI1MTFiMTgiLCJwaG9uZSI6bnVsbCwiZW1haWwiOiJtYW9sb25nZG9uZ0BnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRlc3QiLCJ1bmlvbmlkIjpudWxsLCJvcGVuaWQiOm51bGwsImNsaWVudElkIjoiNjBjYWFmNDFkYTg5ZjE5NTQ4NzVjZWUxIn0sInVzZXJwb29sX2lkIjoiNjBjYWFmNDFkYTg5ZjE5NTQ4NzVjZWUxIiwiYXVkIjoiNjBjYWFmNDFkZjY3MGI3NzFmZDA4OTM3IiwiZXhwIjoxNjU0NDg1NzI0LCJpYXQiOjE2NTMyNzYxMjQsImlzcyI6Imh0dHBzOi8vbHJiMzFzLWRlbW8uYXV0aGluZy5jbi9vaWRjIn0.DbIy4M2DaxLt7pJ3waaBGV5D-BKA8xNVYPURYHL8xzU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-authing-app-id",
+						"value": "60caaf41df670b771fd08937",
+						"type": "text"
+					},
+					{
+						"key": "x-authing-userpool-id",
+						"value": "60caaf41da89f1954875cee1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/order/list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cGRhdGVkX2F0IjoiMjAyMi0wNS0yM1QwMzoxOTozNC4xNzBaIiwiYWRkcmVzcyI6eyJjb3VudHJ5IjpudWxsLCJwb3N0YWxfY29kZSI6bnVsbCwicmVnaW9uIjpudWxsLCJmb3JtYXR0ZWQiOm51bGx9LCJwaG9uZV9udW1iZXJfdmVyaWZpZWQiOmZhbHNlLCJwaG9uZV9udW1iZXIiOm51bGwsImxvY2FsZSI6bnVsbCwiem9uZWluZm8iOm51bGwsImJpcnRoZGF0ZSI6IjIwMDEtMDEtMzFUMTY6MDA6MDAuMDAwWiIsImdlbmRlciI6IiIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJlbWFpbCI6Im1hb2xvbmdkb25nQGdtYWlsLmNvbSIsIndlYnNpdGUiOm51bGwsInBpY3R1cmUiOiJodHRwczovL2ZpbGVzLmF1dGhpbmcuY28vdXNlci1jb250ZW50cy9waG90b3MvNWY2ZjFhNmEtMTRiNy00ODVlLThiMzEtMjAxODZkMTJiNTk5IiwicHJvZmlsZSI6bnVsbCwicHJlZmVycmVkX3VzZXJuYW1lIjpudWxsLCJuaWNrbmFtZSI6IumhuumjjuS4jea1qiIsIm1pZGRsZV9uYW1lIjpudWxsLCJmYW1pbHlfbmFtZSI6bnVsbCwiZ2l2ZW5fbmFtZSI6bnVsbCwibmFtZSI6IumAhumjjuS4jeaKlSIsInN1YiI6IjYyMDMzNWYyMjNkOWMwNDVmYjUxMWIxOCIsImV4dGVybmFsX2lkIjpudWxsLCJ1bmlvbmlkIjpudWxsLCJ1c2VybmFtZSI6InRlc3QiLCJkYXRhIjp7InR5cGUiOiJ1c2VyIiwidXNlclBvb2xJZCI6IjYwY2FhZjQxZGE4OWYxOTU0ODc1Y2VlMSIsImFwcElkIjoiNjBjYWFmNDFkZjY3MGI3NzFmZDA4OTM3IiwiaWQiOiI2MjAzMzVmMjIzZDljMDQ1ZmI1MTFiMTgiLCJ1c2VySWQiOiI2MjAzMzVmMjIzZDljMDQ1ZmI1MTFiMTgiLCJfaWQiOiI2MjAzMzVmMjIzZDljMDQ1ZmI1MTFiMTgiLCJwaG9uZSI6bnVsbCwiZW1haWwiOiJtYW9sb25nZG9uZ0BnbWFpbC5jb20iLCJ1c2VybmFtZSI6InRlc3QiLCJ1bmlvbmlkIjpudWxsLCJvcGVuaWQiOm51bGwsImNsaWVudElkIjoiNjBjYWFmNDFkYTg5ZjE5NTQ4NzVjZWUxIn0sInVzZXJwb29sX2lkIjoiNjBjYWFmNDFkYTg5ZjE5NTQ4NzVjZWUxIiwiYXVkIjoiNjBjYWFmNDFkZjY3MGI3NzFmZDA4OTM3IiwiZXhwIjoxNjU0NDg1NzI0LCJpYXQiOjE2NTMyNzYxMjQsImlzcyI6Imh0dHBzOi8vbHJiMzFzLWRlbW8uYXV0aGluZy5jbi9vaWRjIn0.DbIy4M2DaxLt7pJ3waaBGV5D-BKA8xNVYPURYHL8xzU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-authing-app-id",
+						"value": "60caaf41df670b771fd08937",
+						"type": "text"
+					},
+					{
+						"key": "x-authing-userpool-id",
+						"value": "60caaf41da89f1954875cee1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/order/delete?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"order",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
