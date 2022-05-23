@@ -1,7 +1,7 @@
 # authing-sample-backend
 
 Suppose you are building an on-line shopping application. Right after your user identifies himself in your front end UI,
-He starts to request some protected resource from your backend, for example, his order history.
+He starts to request some protected resource from your backend, for example, his order history. How do you authenticate your user?
 
 There are many IdP (identity provider) out there, in this example, we try to integrate with an IdP called [Authing](https://www.authing.cn/).
 
